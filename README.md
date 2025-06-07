@@ -14,12 +14,12 @@ This project supports development on:
 
 Refer to the platform-specific setup instructions to prepare your environment:
 
-- [Linux Setup (Ubuntu 24.04+)](./docs/LINUX_SETUP.md)
-- [Windows Setup](./docs/WINDOWS_SETUP.md)
-- [macOS Setup](./docs/MAC_SETUP.md)
+- [Linux Setup (Ubuntu 24.04+)](./LINUX_SETUP.md)
+- [Windows Setup](./WINDOWS_SETUP.md)
+- [macOS Setup](./MAC_SETUP.md)
 
 Or start from the overview:  
-👉 [Setup Overview](./docs/SETUP.md)
+👉 [Setup Overview](./SETUP.md)
 
 ---
 
