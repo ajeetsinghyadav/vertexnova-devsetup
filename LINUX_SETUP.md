@@ -6,8 +6,9 @@ This guide helps set up an efficient and developer-friendly Linux environment fo
 
 ## 🔄 System Update
 
-```bash
+```
 sudo apt update && sudo apt upgrade
+```
 
 ## 📦 Essential Development Tools for VertexNova
 
@@ -17,7 +18,7 @@ This section installs all core development, CLI, and graphics tools needed to bu
 
 ### 🔧 Core Build & Development Tools
 
-```bash
+```
 sudo apt install -y \
   build-essential \
   cmake-qt-gui \
@@ -32,4 +33,5 @@ sudo apt install -y \
   libtool \
   libtool-bin \
   unzip
+```
 
