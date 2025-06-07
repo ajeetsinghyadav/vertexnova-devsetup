@@ -197,7 +197,64 @@ alias find="fd"
 chsh -s $(which zsh)
 ```
 
-🌟 Done
+---
 
-Your system is now ready for C++/Qt/OpenGL development and working on VertexNova!
+## 🧰 Install Visual Studio Code
+
+Download the latest .deb package from the official website:
+
+```
+wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 -O vscode.deb
+sudo apt install ./vscode.deb
+```
+
+Alternatively, install via Snap:
+
+```
+sudo snap install code --classic
+```
+
+---
+
+## 🧱 Install MeshLab
+
+```
+sudo apt install -y meshlab
+```
+
+## 🔄 Configure Multiple GCC/G++ Versions
+
+Install specific versions (e.g., GCC 11 and GCC 13):
+
+```
+sudo apt install -y gcc-11 g++-11 gcc-13 g++-13
+```
+
+Set up alternatives:
+```
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 110
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 130
+```
+
+```
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 110
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 130
+````
+Choose default version:
+
+```
+sudo update-alternatives --config gcc
+sudo update-alternatives --config g++
+```
+
+Verify:
+
+```
+gcc --version
+g++ --version
+```
+
+## 🌟 Done
+
+Your system is now ready for working on VertexNova!
 
