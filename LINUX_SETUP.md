@@ -70,7 +70,7 @@ sudo apt install -y \
   preload
 ```
 
-🧐 Productivity CLI Tools
+## 🧐 Productivity CLI Tools
 
 ```
 sudo apt install -y \
@@ -115,19 +115,19 @@ Terminator is a tiling terminal emulator that supports multiple panes and tabs.
 sudo apt install -y terminator
 ```
 
-🧵 Shell Setup — Zsh + Oh My Zsh
+## 🧵 Shell Setup — Zsh + Oh My Zsh
 
 ```
 sudo apt install -y zsh
 ```
 
-🚀 Install Oh My Zsh
+### 🚀 Install Oh My Zsh
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-🔧 Plugins
+### 🔧 Plugins
 ```
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -144,7 +144,7 @@ git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ${ZSH_CUSTOM
 git clone --recursive --depth 1 https://github.com/mattmc3/zsh-safe-rm.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-safe-rm
 ```
 
-🌟 Enable Plugins
+### 🌟 Enable Plugins
 
 Edit ~/.zshrc:
 
@@ -162,7 +162,7 @@ plugins=(
 source ~/.zshrc
 ```
 
-🌈 Optional: Powerlevel10k Theme
+### 🌈 Optional: Powerlevel10k Theme
 
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
@@ -181,7 +181,7 @@ exec zsh
 p10k configure
 ```
 
-🚧 Useful Aliases
+### 🚧 Useful Aliases
 
 Append to ~/.zshrc:
 
@@ -191,7 +191,7 @@ alias cat="bat"
 alias find="fd"
 ```
 
-💪 Make Zsh the Default Shell
+### 💪 Make Zsh the Default Shell
 
 ```
 chsh -s $(which zsh)
@@ -221,6 +221,7 @@ sudo snap install code --classic
 ```
 sudo apt install -y meshlab
 ```
+---
 
 ## 🔄 Configure Multiple GCC/G++ Versions
 
@@ -253,6 +254,7 @@ Verify:
 gcc --version
 g++ --version
 ```
+---
 
 ## 🌟 Done
 
