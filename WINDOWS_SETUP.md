@@ -70,6 +70,32 @@ python -m pip install virtualenv
 
 ---
 
+## 🎮 Vulkan SDK (Windows)
+
+Install the official Vulkan SDK (includes headers, libraries, validation layers, and tools):
+
+```
+choco install -y vulkan-sdk
+```
+
+Notes:
+- The installer sets the `VULKAN_SDK` environment variable and updates `PATH` for tools like `vulkaninfo` and `glslangValidator`.
+- For the latest releases and manual installer, see `https://vulkan.lunarg.com/sdk/home`.
+
+---
+
+## 📚 Doxygen (Documentation)
+
+Install Doxygen and Graphviz for documentation generation:
+
+```
+choco install -y doxygen.install graphviz
+```
+
+After installation, restart your terminal so PATH updates are picked up.
+
+---
+
 ## 🧰 Install Visual Studio Code
 
 ```

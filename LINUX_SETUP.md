@@ -44,6 +44,39 @@ sudo apt install -y \
   gettext
 ```
 
+## 🎮 Vulkan SDK and Tools
+
+Install Vulkan development headers, validation layers, tools, and SPIR-V toolchain:
+
+```
+sudo apt install -y \
+  libvulkan-dev \
+  vulkan-tools \
+  vulkan-validationlayers-dev \
+  spirv-tools \
+  glslang-tools \
+  shaderc \
+  spirv-headers
+```
+
+Optional: Install the latest official Vulkan SDK from LunarG (provides samples, layers, docs). See `https://vulkan.lunarg.com/sdk/home` for the most recent version and Linux installation instructions.
+
+```
+# Example (replace VERSION with the latest, e.g., 1.3.296.0):
+wget https://sdk.lunarg.com/sdk/download/VERSION/linux/vulkan_sdk.tar.gz -O vulkan_sdk.tar.gz
+mkdir -p $HOME/.local/vulkan-sdk && tar -xzf vulkan_sdk.tar.gz -C $HOME/.local/vulkan-sdk --strip-components=1
+echo 'export VULKAN_SDK="$HOME/.local/vulkan-sdk/x86_64"' >> ~/.bashrc
+echo 'export PATH="$VULKAN_SDK/bin:$PATH"' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH="$VULKAN_SDK/lib:$LD_LIBRARY_PATH"' >> ~/.bashrc
+echo 'export VK_LAYER_PATH="$VULKAN_SDK/etc/vulkan/explicit_layer.d"' >> ~/.bashrc
+```
+
+Reload your shell configuration if needed.
+
+```
+source ~/.bashrc or source ~/.zshrc
+```
+
 ## 🐍 Python Environment
 
 ```
@@ -68,6 +101,14 @@ sudo apt install -y \
   zsh \
   mc \
   preload
+```
+
+## 📚 Doxygen (Documentation)
+
+Install Doxygen and Graphviz for generating code documentation:
+
+```
+sudo apt install -y doxygen graphviz
 ```
 
 ## 🧐 Productivity CLI Tools

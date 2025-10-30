@@ -32,6 +32,26 @@ This guide helps set up an efficient and developer-friendly macOS environment fo
 brew install qt gettext
 ```
 
+## 🎮 Vulkan SDK and MoltenVK (macOS)
+
+On macOS, Vulkan runs via Metal using MoltenVK. Install the Khronos Vulkan SDK and MoltenVK:
+
+```
+brew install --cask vulkan-sdk
+brew install molten-vk
+```
+
+Notes:
+- The SDK provides headers, validation layers, `glslangValidator`, `spirv-tools`, and samples.
+- MoltenVK implements Vulkan over Metal. Ensure `VK_ICD_FILENAMES` and other environment variables are configured if needed by your build system.
+- For latest release notes and manual installers, see `https://vulkan.lunarg.com/sdk/home`.
+
+Verify tools:
+
+```
+vulkaninfo || echo "Install VK tools or ensure PATH includes Vulkan SDK bin"
+```
+
 ## 🐍 Python Environment
 
 ```
@@ -50,6 +70,14 @@ brew install curl wget unrar
 
 ```
 brew install zsh mc
+```
+
+## 📚 Doxygen (Documentation)
+
+Install Doxygen and Graphviz for documentation generation:
+
+```
+brew install doxygen graphviz
 ```
 
 ## 🧐 Productivity CLI Tools
